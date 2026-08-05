@@ -877,8 +877,8 @@ button {
 .gallery img {
   min-height: 240px;
 
-  background: #d7d9d2;
-
+  background: transparent;
+  
   object-fit: cover;
 }
 
