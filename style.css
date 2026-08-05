@@ -443,8 +443,8 @@ button {
 
   overflow: hidden;
 
-  background: transparent;
-} 
+  background: #d7d9d2;
+}
 
 .project-media img {
   width: 100%;
@@ -917,80 +917,6 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-}/* =========================================================
-   PROJECT GALLERY
-   ========================================================= */
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
-
-  padding-bottom: 110px;
-}
-
-.gallery figure {
-  margin: 0;
-}
-
-.gallery img {
-  display: block;
-  width: 100%;
-  height: auto;
-
-  background: transparent;
-}
-
-
-/* Full-width image */
-
-.gallery .full {
-  grid-column: 1 / 13;
-}
-
-
-/* Asymmetrical image on the left */
-
-.gallery .left {
-  grid-column: 1 / 8;
-}
-
-
-/* Asymmetrical image on the right */
-
-.gallery .right {
-  grid-column: 8 / 13;
-
-  margin-top: 110px;
-}
-
-
-/* Two-column image layout */
-
-.gallery .half-a {
-  grid-column: 1 / 7;
-}
-
-.gallery .half-b {
-  grid-column: 7 / 13;
-}
-
-
-/* Image captions */
-
-.gallery figcaption {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-
-  padding-top: 10px;
-
-  color: var(--muted);
-
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
 /* =========================================================
    SECTION IMAGE OVERLAY
    ========================================================= */
@@ -1080,28 +1006,6 @@ button {
   font-size: clamp(12px, 1vw, 15px);
   font-weight: 300;
   line-height: 1.6;
-}
-.caption-left{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-
-    gap:4px;
-
-    padding-top:12px;
-}
-
-.caption-title{
-    font-size:10px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-
-    color:#777;
-}
-
-.caption-subtitle{
-    font-size:12px;
-    color:#222;
 }
 /* =========================================================
    HILL IMAGE OVERLAY
