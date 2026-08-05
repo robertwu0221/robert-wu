@@ -917,6 +917,53 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+/* =========================================================
+   SECTION IMAGE OVERLAY
+   ========================================================= */
+
+.section-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section-overlay {
+  position: absolute;
+  z-index: 2;
+  bottom: 2rem;
+  left: 2rem;
+
+  width: min(560px, calc(100% - 4rem));
+
+  color: var(--white);
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.7),
+    0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.section-title {
+  display: block;
+  margin-bottom: 0.75rem;
+
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.section-description {
+  margin: 0;
+
+  font-size: clamp(11px, 0.9vw, 14px);
+  font-weight: 300;
+  line-height: 1.55;
+}
 /* Concept image with text overlay */
 
 .concept-image {
