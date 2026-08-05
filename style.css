@@ -658,11 +658,6 @@ button {
   letter-spacing: -0.075em;
 }
 
-.contact-copy {
-  grid-column: 9 / 13;
-
-  margin-top: 65px;
-}
 
 .contact-email {
   display: inline-block;
@@ -673,7 +668,35 @@ button {
 
   font-size: clamp(18px, 2vw, 28px);
 }
+.contact-content {
+  grid-column: 7 / 13;
 
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
+  align-items: end;
+  gap: 32px;
+
+  margin-top: 65px;
+}
+
+.contact-copy {
+  margin-top: 0;
+}
+
+.contact-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
 
 /* =========================================================
    FOOTER
