@@ -640,12 +640,21 @@ button {
   background: var(--ink);
 }
 
-.contact-grid {
+contact-grid {
+
   display: grid;
+
   grid-template-columns: repeat(12, 1fr);
+
   gap: 24px;
+
 }
 
+.contact h2 {
+
+  grid-column: 1 / 11;
+
+}
 .contact h2 {
   grid-column: 1 / 11;
 
@@ -680,7 +689,11 @@ button {
 }
 
 .contact-copy {
-  margin-top: 0;
+
+  grid-column: 1 / 8;
+
+  margin-top: 65px;
+
 }
 
 .contact-image {
@@ -688,14 +701,30 @@ button {
   overflow: hidden;
 }
 
+.contact-image {
+
+  grid-column: 9 / 13;
+
+  margin-top: 65px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(244, 242, 236, 0.3);
+
+}
+
 .contact-image img {
+
   display: block;
 
   width: 100%;
+
   height: auto;
 
   aspect-ratio: 4 / 5;
+
   object-fit: cover;
+
 }
 
 /* =========================================================
