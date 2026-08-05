@@ -25,12 +25,7 @@
   >
 </head>
 
-
 <body>
-
-  <!-- =====================================================
-       HEADER
-       ===================================================== -->
 
   <header class="site-header">
 
@@ -47,15 +42,12 @@
 
     <button
       class="menu-toggle"
-      type="button"
       aria-expanded="false"
-      aria-label="Open navigation menu"
     >
       Menu
     </button>
 
     <nav class="site-nav">
-
       <a href="#work">
         Projects
       </a>
@@ -67,17 +59,12 @@
       <a href="#contact">
         Contact
       </a>
-
     </nav>
 
   </header>
 
 
   <main id="top">
-
-    <!-- ===================================================
-         HERO
-         =================================================== -->
 
     <section class="hero shell">
 
@@ -90,7 +77,6 @@
         </p>
 
         <h1 class="reveal">
-
           <span>
             Landscape as
           </span>
@@ -100,7 +86,6 @@
               living structure.
             </em>
           </span>
-
         </h1>
 
         <span class="hero-scroll reveal">
@@ -125,32 +110,25 @@
           onerror="this.onerror=null; this.src='assets/projects/acupuncture.svg'"
           alt="Campus Acupuncture project"
         >
+      <div class="hero-overlay">
+        
+        <span class="media-tag">
+          Grounds in the making — Campus Acupuncture
+        </span>
 
-        <div class="hero-overlay">
+        <p class="hero-project-description">
 
-          <span class="media-tag">
-            Grounds in the Making — Campus Acupuncture
-          </span>
+          Building upon the existing landscape, the project introduces a series of carefully positioned interventions that reconnect movement, 
+          encourage interaction and reveal overlooked spaces. Rather than transforming the campus through a single gesture, 
+          a lightweight and adaptable system gradually weaves its fragmented parts into a shared and evolving landscape.
 
-          <p class="hero-project-description">
-            Building upon the existing landscape, the project introduces a
-            series of carefully positioned interventions that reconnect movement,
-            encourage interaction and reveal overlooked spaces. Rather than
-            transforming the campus through a single gesture, a lightweight and
-            adaptable system gradually weaves its fragmented parts into a shared
-            and evolving landscape.
-          </p>
+        </p>
 
-        </div>
-
+      </div>
       </a>
 
     </section>
 
-
-    <!-- ===================================================
-         SELECTED PROJECTS
-         =================================================== -->
 
     <section
       id="work"
@@ -175,8 +153,6 @@
 
       </header>
 
-
-      <!-- Campus Acupuncture -->
 
       <div class="project-row">
 
@@ -225,8 +201,6 @@
       </div>
 
 
-      <!-- Eggarten and Living Field -->
-
       <div class="project-row">
 
         <article class="project-card half-left">
@@ -238,7 +212,6 @@
 
             <img
               src="assets/projects/eggarten/page.png"
-              onerror="this.onerror=null; this.src='assets/projects/eggarten.svg'"
               alt="Eggarten Forest City"
             >
 
@@ -281,7 +254,6 @@
 
             <img
               src="assets/projects/field/page.png"
-              onerror="this.onerror=null; this.src='assets/projects/field.svg'"
               alt="Living Field"
             >
 
@@ -317,8 +289,6 @@
       </div>
 
 
-      <!-- Ecological Regeneration -->
-
       <div class="project-row">
 
         <article class="project-card wide-right">
@@ -330,7 +300,6 @@
 
             <img
               src="assets/projects/regeneration/page.png"
-              onerror="this.onerror=null; this.src='assets/projects/regeneration.svg'"
               alt="Ecological Regeneration"
             >
 
@@ -368,10 +337,6 @@
     </section>
 
 
-    <!-- ===================================================
-         PROFILE
-         =================================================== -->
-
     <section
       id="profile"
       class="profile shell"
@@ -387,10 +352,11 @@
 
         <p>
           Robert Wu is a Master’s student in Landscape Architecture
-          at the Technical University of Munich. Before joining TUM,
-          he worked as a Project Assistant at Fu Jen Catholic University
-          in Taiwan, contributing to ecological restoration, landscape
-          planning and sustainable environment projects.
+          at the Technical University of Munich.
+          Before joining TUM, he worked as a Project Assistant
+          at Fu Jen Catholic University in Taiwan,
+          contributing to ecological restoration,
+          landscape planning and sustainable environment projects.
         </p>
 
       </div>
@@ -409,7 +375,6 @@
             <br>
             Technical University of Munich
           </p>
-
           <p>
             B.A. Landscape Architecture
             <br>
@@ -476,72 +441,36 @@
     </section>
 
 
-    <!-- ===================================================
-         CONTACT
-         =================================================== -->
+    <section
+      id="contact"
+      class="contact shell"
+    >
 
-.contact {
-  padding-top: 140px;
-  padding-bottom: 38px;
+      <div class="contact-grid">
 
-  color: var(--bg);
-  background: var(--ink);
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
-}
-
-.contact h2 {
-  grid-column: 1 / 11;
-
-  margin: 0;
-
-  font-family: Manrope, sans-serif;
-  font-size: clamp(52px, 9vw, 140px);
-  font-weight: 400;
-  line-height: 0.86;
-  letter-spacing: -0.075em;
-}
-
-.contact-copy {
-  grid-column: 9 / 13;
-
-  margin-top: 65px;
-}
-
-.contact-email {
-  display: inline-block;
-
-  margin-top: 26px;
-
-  border-bottom: 1px solid;
-
-  font-size: clamp(18px, 2vw, 28px);
-}
+        <h2 class="reveal">
+          Let’s shape the next landscape.
+        </h2>
 
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+        <div class="contact-copy reveal">
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+          <p>
+            Available for Werkstudent,
+            voluntary internship, mandatory internship opportunities, and any cooperation.
+          </p>
 
-  margin-top: 150px;
-  padding-top: 18px;
+          <a
+            class="contact-email"
+            href=robertwu0890221@gmail.com"
+          >
+            robertwu0890221@gmail.com ↗
+          </a>
 
-  border-top: 1px solid rgba(244, 242, 236, 0.3);
+        </div>
 
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-      <!-- Footer must remain outside contact-grid -->
+      </div>
+
 
       <footer class="footer">
 
