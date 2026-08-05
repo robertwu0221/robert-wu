@@ -1,4 +1,0 @@
-const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.site-nav');if(toggle){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-document.getElementById('year').textContent=new Date().getFullYear();
-const dot=document.querySelector('.cursor-dot');if(dot&&matchMedia('(pointer:fine)').matches){document.addEventListener('mousemove',e=>{dot.style.left=e.clientX+'px';dot.style.top=e.clientY+'px';dot.style.opacity='1'})}
