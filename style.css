@@ -796,15 +796,23 @@ button {
    PROJECT COVER
    ========================================================= */
 
+/* =========================================================
+   PROJECT COVER
+   ========================================================= */
+
 .cover {
+  position: relative;
+
   height: min(80vw, 900px);
 
   overflow: hidden;
 
-  background: #d7d9d2;
+  background: transparent;
 }
 
 .cover img {
+  display: block;
+
   width: 100%;
   height: 100%;
 
@@ -812,6 +820,48 @@ button {
 }
 
 
+/* Cover text in the lower-left corner */
+
+.cover .hero-overlay {
+  position: absolute;
+  z-index: 2;
+
+  left: 2rem;
+  bottom: 2rem;
+
+  width: min(560px, calc(100% - 4rem));
+
+  color: var(--white);
+
+  text-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.6),
+    0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.cover .media-tag {
+  position: static;
+
+  display: block;
+
+  margin-bottom: 0.8rem;
+  padding: 0;
+
+  color: rgba(255, 255, 255, 0.8);
+  background: transparent;
+
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.cover .hero-project-description {
+  max-width: 520px;
+  margin: 0;
+
+  font-size: clamp(12px, 1vw, 15px);
+  font-weight: 300;
+  line-height: 1.65;
+}
 /* =========================================================
    PROJECT STORY
    ========================================================= */
