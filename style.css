@@ -1488,3 +1488,24 @@ button {
     transition: none;
   }
 }
+
+/* Force cover text to the lower-left corner */
+
+.cover {
+  position: relative !important;
+}
+
+.cover > .hero-overlay {
+  position: absolute !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: 32px !important;
+  left: 32px !important;
+
+  z-index: 10 !important;
+
+  width: min(560px, calc(100% - 64px));
+
+  color: #ffffff;
+}
