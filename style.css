@@ -640,21 +640,18 @@ button {
   background: var(--ink);
 }
 
-contact-grid {
 
+/* Contact grid */
+
+.contact-grid {
   display: grid;
-
-  grid-template-columns: repeat(12, 1fr);
-
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 24px;
-
 }
 
-.contact h2 {
 
-  grid-column: 1 / 11;
+/* Main contact heading */
 
-}
 .contact h2 {
   grid-column: 1 / 11;
 
@@ -668,6 +665,22 @@ contact-grid {
 }
 
 
+/* Contact text and email */
+
+.contact-copy {
+  grid-column: 1 / 8;
+
+  margin-top: 65px;
+}
+
+.contact-copy p {
+  max-width: 720px;
+  margin: 0;
+
+  font-size: clamp(16px, 1.4vw, 22px);
+  line-height: 1.5;
+}
+
 .contact-email {
   display: inline-block;
 
@@ -676,55 +689,34 @@ contact-grid {
   border-bottom: 1px solid;
 
   font-size: clamp(18px, 2vw, 28px);
-}
-.contact-content {
-  grid-column: 7 / 13;
-
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
-  align-items: end;
-  gap: 32px;
-
-  margin-top: 65px;
+  line-height: 1.2;
 }
 
-.contact-copy {
 
-  grid-column: 1 / 8;
-
-  margin-top: 65px;
-
-}
+/* Portrait image */
 
 .contact-image {
-  width: 100%;
-  overflow: hidden;
-}
-
-.contact-image {
-
   grid-column: 9 / 13;
+  align-self: start;
 
   margin-top: 65px;
-
   padding-top: 18px;
 
   border-top: 1px solid rgba(244, 242, 236, 0.3);
-
 }
 
 .contact-image img {
-
   display: block;
 
   width: 100%;
-
+  max-width: 260px;
   height: auto;
 
+  margin-left: auto;
+
   aspect-ratio: 4 / 5;
-
   object-fit: cover;
-
+  object-position: center;
 }
 
 /* =========================================================
