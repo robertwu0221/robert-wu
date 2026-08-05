@@ -260,7 +260,7 @@ button {
   position: absolute;
   z-index: 3;
 
-  top: 120px;
+  top: 30px;
   right: var(--pad);
 
   width: 420px;
