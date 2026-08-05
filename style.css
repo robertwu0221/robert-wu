@@ -281,19 +281,21 @@ button {
    ========================================================= */
 
 .hero-overlay {
+
   position: absolute;
+
   z-index: 2;
+
   bottom: 2rem;
+
   left: 2rem;
 
   width: min(560px, calc(100% - 4rem));
-  padding: 1.3rem 1.45rem;
 
   color: var(--white);
-  background: rgba(16, 18, 15, 0.48);
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+
 }
 
 .media-tag {
