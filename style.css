@@ -967,6 +967,22 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+.aligned-drawing {
+  display: flex;
+  flex-direction: column;
+}
+
+.aligned-drawing img {
+  width: 100%;
+  height: clamp(320px, 34vw, 520px);
+
+  object-fit: contain;
+  object-position: center top;
+}
+
+.aligned-drawing figcaption {
+  margin-top: auto;
+}
 /* =========================================================
    FOUR-IMAGE ROW
    ========================================================= */
