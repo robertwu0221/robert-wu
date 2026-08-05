@@ -479,47 +479,192 @@
     <!-- ===================================================
          CONTACT
          =================================================== -->
+/* =========================================================
+   CONTACT
+   ========================================================= */
 
-    <section
-      id="contact"
-      class="contact shell"
-    >
+.contact {
+  min-height: 100svh;
 
-      <div class="contact-grid">
+  padding-top: 40px;
+  padding-bottom: 28px;
 
-        <h2 class="reveal">
-          Let’s shape the next landscape.
-        </h2>
-
-
-        <div class="contact-copy reveal">
-
-          <p>
-            Available for Werkstudent, voluntary internship,
-            mandatory internship opportunities and other forms
-            of collaboration.
-          </p>
-
-          <a
-            class="contact-email"
-            href="mailto:robertwu0890221@gmail.com"
-          >
-            robertwu0890221@gmail.com ↗
-          </a>
-
-        </div>
+  color: var(--bg);
+  background: var(--ink);
+}
 
 
-        <div class="contact-image reveal">
+/* Large title */
 
-          <img
-            src="assets/contact/photo.png"
-            alt="Portrait of Robert Wu"
-          >
+.contact-title {
+  max-width: 1200px;
+  margin: 0;
 
-        </div>
+  font-family: Manrope, sans-serif;
+  font-size: clamp(72px, 10vw, 165px);
+  font-weight: 400;
+  line-height: 0.82;
+  letter-spacing: -0.075em;
+}
 
-      </div>
+
+/* Main content grid */
+
+.contact-body {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(520px, 1.05fr);
+
+  align-items: start;
+  gap: clamp(60px, 8vw, 140px);
+
+  margin-top: clamp(70px, 9vw, 140px);
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.contact-main {
+  padding-top: 0;
+}
+
+.contact-intro {
+  max-width: 680px;
+  margin: 0 0 28px;
+
+  font-size: clamp(16px, 1.35vw, 22px);
+  line-height: 1.5;
+}
+
+.contact-email {
+  display: inline-block;
+
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid rgba(244, 242, 236, 0.85);
+
+  font-family: Manrope, sans-serif;
+  font-size: clamp(22px, 2.4vw, 38px);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+   ========================================================= */
+
+.contact-side {
+  width: 100%;
+}
+
+
+/* Thin line above the right composition */
+
+.contact-side-line {
+  width: 100%;
+  height: 1px;
+
+  margin-bottom: 54px;
+
+  background: rgba(244, 242, 236, 0.3);
+}
+
+
+/* White text frame + portrait */
+
+.contact-side-content {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 1fr)
+    clamp(150px, 13vw, 210px);
+
+  align-items: stretch;
+  gap: 24px;
+}
+
+
+/* White outlined text frame */
+
+.contact-text-frame {
+  min-height: 240px;
+  padding: 28px 30px;
+
+  border: 2px solid rgba(244, 242, 236, 0.9);
+
+  color: var(--bg);
+}
+
+.contact-frame-label {
+  display: block;
+
+  margin-bottom: 38px;
+
+  color: rgba(244, 242, 236, 0.65);
+
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.contact-text-frame p {
+  max-width: 500px;
+  margin: 0;
+
+  font-size: clamp(13px, 1vw, 16px);
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.contact-text-frame p + p {
+  margin-top: 18px;
+}
+
+
+/* Portrait frame */
+
+.contact-photo {
+  min-height: 240px;
+
+  overflow: hidden;
+
+  border: 2px solid rgba(244, 242, 236, 0.9);
+}
+
+.contact-photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  margin-top: clamp(120px, 15vw, 240px);
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(244, 242, 236, 0.3);
+
+  font-size: 9px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
 
 
       <!-- Footer must remain outside contact-grid -->
