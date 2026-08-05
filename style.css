@@ -1007,6 +1007,102 @@ button {
   font-weight: 300;
   line-height: 1.6;
 }
+/* =========================================================
+   HILL IMAGE OVERLAY
+   ========================================================= */
+
+.hill-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.hill-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hill-overlay {
+  position: absolute;
+  z-index: 2;
+  bottom: 2rem;
+  left: 2rem;
+
+  width: min(430px, calc(100% - 4rem));
+
+  color: var(--white);
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.7),
+    0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hill-title {
+  display: block;
+
+  margin-bottom: 0.7rem;
+
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+.hill-description {
+  margin: 0;
+
+  font-size: clamp(11px, 0.9vw, 13px);
+  font-weight: 300;
+  line-height: 1.55;
+}
+/* =========================================================
+   BRUSHWOOD IMAGE OVERLAY
+   ========================================================= */
+
+.brushwood-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.brushwood-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.brushwood-overlay {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 2;
+
+  width: min(430px, calc(100% - 4rem));
+
+  color: var(--white);
+
+  text-shadow:
+    0 2px 10px rgba(0,0,0,.7),
+    0 1px 3px rgba(0,0,0,.8);
+}
+
+.brushwood-title {
+  display: block;
+
+  margin-bottom: .7rem;
+
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+}
+
+.brushwood-description {
+  margin: 0;
+
+  font-size: clamp(11px, .9vw, 13px);
+  font-weight: 300;
+  line-height: 1.55;
+}
 
 
 /* =========================================================
