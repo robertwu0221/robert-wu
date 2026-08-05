@@ -256,32 +256,18 @@ button {
    HERO PORTRAIT
    ========================================================= */
 
-/* Hero must be the positioning reference */
-
-.hero {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-
-  min-height: 100svh;
-  padding-top: 108px;
-}
-
-
-/* Portrait */
-
 .hero-portrait {
-  position: absolute;
-  z-index: 3;
+  grid-column: 10 / 13;
+  grid-row: 1 / 5;
 
-  top: 70px;
-  right: var(--pad);
+  align-self: start;
+  justify-self: stretch;
 
-  width: clamp(280px, 20vw, 420px);
-  height: clamp(380px, 30vw, 580px);
+  margin-top: 18px;
 
   overflow: hidden;
+
+  aspect-ratio: 4 / 5;
 }
 
 .hero-portrait img {
@@ -293,9 +279,6 @@ button {
   object-fit: cover;
   object-position: center top;
 }
-
-
-/* Leave enough space for the portrait */
 
 .hero-copy {
   grid-column: 7 / 10;
