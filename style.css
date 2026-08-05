@@ -260,11 +260,11 @@ button {
   position: absolute;
   z-index: 3;
 
-  top: 30px;
+  top: 70px;
   right: var(--pad);
 
-  width: 420px;
-  height: 560px;
+  width: clamp(320px, 24vw, 520px);
+  height: clamp(420px, 34vw, 680px);
 
   overflow: hidden;
 }
