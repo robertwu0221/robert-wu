@@ -255,14 +255,14 @@ button {
 /* =========================================================
    HERO PORTRAIT
    ========================================================= */
-
 .hero-portrait {
   grid-column: 10 / 13;
-  grid-row: 1 / 5;
+  grid-row: 1 / 4;
 
   align-self: start;
-  justify-self: stretch;
+  justify-self: end;
 
+  width: clamp(180px, 16vw, 280px);
   margin-top: 18px;
 
   overflow: hidden;
@@ -279,14 +279,6 @@ button {
   object-fit: cover;
   object-position: center top;
 }
-
-.hero-copy {
-  grid-column: 7 / 10;
-
-  max-width: 440px;
-  margin: 20px 0 0;
-
-  font-size: clamp(15px, 1.3vw, 20px);
 }
 /* =========================================================
    HOME HERO IMAGE
