@@ -968,6 +968,48 @@ button {
   letter-spacing: 0.1em;
 }
 /* =========================================================
+   FOUR-IMAGE ROW
+   ========================================================= */
+
+.four-image-row {
+  grid-column: 1 / 13;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+
+  width: 100%;
+}
+
+.four-image-row .small-image {
+  min-width: 0;
+  margin: 0;
+}
+
+.four-image-row .small-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+
+  background: transparent;
+}
+
+.four-image-row .small-image figcaption {
+  display: block;
+
+  padding-top: 10px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+/* =========================================================
    SECTION IMAGE OVERLAY
    ========================================================= */
 
