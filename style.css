@@ -259,8 +259,8 @@ button {
   top: 86px;
   right: var(--pad);
 
-  width: clamp(120px, 10vw, 180px);
-  aspect-ratio: 4 / 5;
+  width: 340px;
+  height: 300px;
 
   overflow: hidden;
 }
@@ -272,7 +272,7 @@ button {
   height: 100%;
 
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
 }
 
 /* =========================================================
