@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Robert Wu — Landscape Architecture portfolio. Ecological urbanism, climate adaptation, landscape infrastructure and research by design." />
+  <title>Robert Wu — Landscape Architecture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Robert Wu home">
+      <span>ROBERT WU</span>
+      <small>LANDSCAPE ARCHITECTURE</small>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#profile">Profile</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-grid">
+      <div class="hero-kicker reveal">Landscape Architecture · Munich / Taiwan</div>
+      <h1 class="hero-title reveal">
+        Designing landscapes as
+        <em>living infrastructure.</em>
+      </h1>
+      <div class="hero-intro reveal">
+        <p>Robert Wu is a Master’s student in Landscape Architecture at the Technical University of Munich, working across ecological urbanism, climate adaptation and research by design.</p>
+        <a class="text-link" href="#work">Selected work <span>↘</span></a>
+      </div>
+      <div class="hero-field" aria-label="Abstract landscape diagram">
+        <svg viewBox="0 0 1600 700" role="img" aria-label="Abstract contour landscape">
+          <defs>
+            <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.055"/></feComponentTransfer></filter>
+          </defs>
+          <rect width="1600" height="700" fill="#dfe4d7"/>
+          <g fill="none" stroke="#67735f" stroke-width="1.2" opacity="0.75">
+            <path d="M-60 520C210 370 340 630 600 470s400-250 640-70 390 20 470-80"/>
+            <path d="M-80 555C190 405 350 660 620 505s390-225 620-60 370 30 455-75"/>
+            <path d="M-90 590C180 440 360 690 640 540s380-200 600-50 350 40 440-70"/>
+            <path d="M-100 625C170 475 370 720 660 575s370-175 580-40 330 50 425-65"/>
+            <path d="M120 180c170-100 340-70 465 35s310 130 440 25 290-80 470 30"/>
+            <path d="M90 145c185-105 365-75 500 35s300 125 430 20 295-85 485 25"/>
+            <path d="M55 110c200-110 390-80 535 35s290 120 420 15 300-90 500 20"/>
+          </g>
+          <g fill="#88947c" opacity="0.85">
+            <circle cx="250" cy="375" r="90"/><circle cx="330" cy="330" r="64"/><circle cx="420" cy="390" r="120"/>
+            <circle cx="1180" cy="260" r="110"/><circle cx="1290" cy="310" r="80"/><circle cx="1380" cy="240" r="120"/>
+          </g>
+          <g fill="#f3f1e9" opacity="0.95">
+            <rect x="665" y="235" width="110" height="225" transform="rotate(-8 720 347)"/>
+            <rect x="800" y="210" width="130" height="270" transform="rotate(5 865 345)"/>
+            <rect x="950" y="280" width="95" height="195" transform="rotate(-4 997 377)"/>
+          </g>
+          <rect width="1600" height="700" filter="url(#noise)" opacity="0.5"/>
+        </svg>
+        <div class="field-caption"><span>Ecology</span><span>Systems</span><span>Space</span><span>Time</span></div>
+      </div>
+    </section>
+
+    <section id="work" class="work-section">
+      <div class="section-heading section-grid reveal">
+        <p class="eyebrow">01 — Selected Work</p>
+        <h2>Projects across multiple scales,<br>from urban systems to precise interventions.</h2>
+      </div>
+
+      <article class="project project-featured reveal">
+        <a class="project-image" href="project-eggarten.html" aria-label="View Eggarten Forest City project">
+          <img src="assets/projects/eggarten.svg" alt="Abstract masterplan placeholder for Eggarten Forest City" />
+          <span class="view-label">View project ↗</span>
+        </a>
+        <div class="project-meta section-grid">
+          <div><span class="project-no">01</span><h3>Eggarten Forest City</h3></div>
+          <p>Ecological urbanism · Forest-based residential structure · Munich</p>
+          <p class="project-year">2025—26</p>
+        </div>
+      </article>
+
+      <div class="project-pair">
+        <article class="project reveal">
+          <a class="project-image ratio-portrait" href="project-acupuncture.html">
+            <img src="assets/projects/acupuncture.svg" alt="Abstract nodes and networks placeholder" />
+            <span class="view-label">View project ↗</span>
+          </a>
+          <div class="project-meta compact">
+            <div><span class="project-no">02</span><h3>Campus Acupuncture</h3></div>
+            <p>Small-scale interventions · Participation · Temporal activation</p>
+          </div>
+        </article>
+        <article class="project reveal">
+          <a class="project-image ratio-landscape" href="project-field.html">
+            <img src="assets/projects/field.svg" alt="Abstract landscape section placeholder" />
+            <span class="view-label">View project ↗</span>
+          </a>
+          <div class="project-meta compact">
+            <div><span class="project-no">03</span><h3>Living Field</h3></div>
+            <p>Green technologies · Productive landscapes · Research by design</p>
+          </div>
+        </article>
+      </div>
+
+      <article class="project project-wide reveal">
+        <a class="project-image" href="project-regeneration.html">
+          <img src="assets/projects/regeneration.svg" alt="Abstract ecological corridor placeholder" />
+          <span class="view-label">View project ↗</span>
+        </a>
+        <div class="project-meta section-grid">
+          <div><span class="project-no">04</span><h3>Ecological Regeneration</h3></div>
+          <p>Landscape planning · Habitat restoration · Taiwan</p>
+          <p class="project-year">Professional</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="profile" class="profile section-grid">
+      <p class="eyebrow reveal">02 — Profile</p>
+      <div class="profile-main reveal">
+        <h2>Landscape is not a backdrop. It is a dynamic framework for ecological and social life.</h2>
+        <p>Before joining TUM, Robert worked as a Project Assistant at Fu Jen Catholic University in Taiwan, contributing to landscape planning, ecological restoration and sustainable environment projects. His current interests focus on ecological urbanism, climate adaptation, landscape infrastructure and the integration of ecological systems into urban environments.</p>
+      </div>
+      <div class="profile-details reveal">
+        <div><span>Education</span><p>M.A. Landscape Architecture<br>Technical University of Munich</p></div>
+        <div><span>Experience</span><p>Project Assistant<br>Fu Jen Catholic University, Taiwan</p></div>
+        <div><span>Tools</span><p>Rhino · GIS · Adobe Creative Suite<br>Design research · Spatial analysis</p></div>
+        <div><span>Languages</span><p>Chinese · English · German</p></div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="statement-track">
+        <span>ECOLOGICAL URBANISM</span><i>×</i><span>LANDSCAPE INFRASTRUCTURE</span><i>×</i><span>CLIMATE ADAPTATION</span><i>×</i><span>RESEARCH BY DESIGN</span><i>×</i>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-grid">
+      <p class="eyebrow reveal">03 — Contact</p>
+      <div class="contact-main reveal">
+        <h2>Let’s discuss landscapes,<br>cities and future ecologies.</h2>
+        <a class="email-link" href="mailto:your.email@example.com">your.email@example.com ↗</a>
+      </div>
+      <div class="contact-note reveal">
+        <p>Available for Werkstudent, voluntary internship and mandatory internship opportunities.</p>
+        <p>Based in Munich, Germany.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Robert Wu</span>
+    <span>Landscape Architecture Portfolio</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
