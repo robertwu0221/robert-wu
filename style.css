@@ -875,12 +875,11 @@ button {
 }
 
 .gallery img {
-  display: block;
-  width: 100%;
-  height: auto;
+  min-height: 240px;
 
   background: transparent;
-}
+  
+  object-fit: cover;
 }
 
 .gallery .full {
@@ -917,6 +916,7 @@ button {
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
 }/* =========================================================
    PROJECT GALLERY
    ========================================================= */
