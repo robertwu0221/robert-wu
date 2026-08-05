@@ -252,15 +252,19 @@ button {
   position: relative;
 }
 
+/* =========================================================
+   HERO PORTRAIT
+   ========================================================= */
+
 .hero-portrait {
   position: absolute;
   z-index: 3;
 
-  top: 86px;
+  top: 120px;
   right: var(--pad);
 
-  width: 340px;
-  height: 300px;
+  width: clamp(320px, 24vw, 520px);
+  height: clamp(420px, 34vw, 680px);
 
   overflow: hidden;
 }
@@ -272,9 +276,8 @@ button {
   height: 100%;
 
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center top;
 }
-
 /* =========================================================
    HOME HERO IMAGE
    ========================================================= */
