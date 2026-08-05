@@ -263,8 +263,8 @@ button {
   top: 120px;
   right: var(--pad);
 
-  width: clamp(320px, 24vw, 520px);
-  height: clamp(420px, 34vw, 680px);
+  width: 420px;
+  height: 560px;
 
   overflow: hidden;
 }
