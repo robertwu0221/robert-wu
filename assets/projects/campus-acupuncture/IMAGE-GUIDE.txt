@@ -1,0 +1,12 @@
+Put your Campus Acupuncture images in this folder with these names:
+
+cover.jpg      Homepage + project hero image (recommended 2400 x 1600 px)
+concept.jpg    Concept / acupuncture network diagram
+masterplan.jpg Masterplan or overall strategy drawing
+section.jpg    Main section drawing
+render-01.jpg  Main perspective rendering
+render-02.jpg  Second perspective or atmosphere image
+detail.jpg     Structure, participation, material or phasing detail
+
+You may use .webp instead, but then change the file extension in index.html and project-acupuncture.html.
+File names should use lowercase letters, numbers and hyphens only.
